@@ -14,10 +14,11 @@ def main():
     phone_number_input = input("Please provide your phone number: ")
 
     with open(full_path, 'w') as file:
-        file.write(f'Full Name: {name_input}, \nAdress: {address_input}, \nPhone Number: {phone_number_input}')
+        file.write(f'{name_input}, {address_input}, {phone_number_input}')
 
     with open(full_path, 'r') as file:
         file_read = file.read()
+        # i wanted to print the file read into a more user friendly way but that's not a requirement 
         print(file_read)
 if __name__=="__main__":
     main()
